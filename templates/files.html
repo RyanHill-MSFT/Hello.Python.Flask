@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+Files
+{% endblock %}
+{% block content %}
+<h2>Files</h2>
+<p><label>Message:</label><span>{{ message }}</span></p>
+<form method="post" action="/files/process" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="Upload" />
+</form>
+{% endblock %}
