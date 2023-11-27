@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+env:
+  AZURE_WEBAPP_NAME: ${{ variables.AZURE_WEBAPP_NAME }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
